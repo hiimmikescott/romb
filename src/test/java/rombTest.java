@@ -11,9 +11,15 @@ public class rombTest {
         this.romb = new Romb();
     }
     @Test
-    public void rombTestCalc(){
+    public void rombTestCalckerulet_30_35(){
         double actual = this.romb.kerulet(30.0 , 35);
         double expected = 3.1416;
+        Assert.assertEquals(actual, expected, 0.1);
+    }
+    @Test 
+    public void rombTestCalckerulet_100_90(){
+        double actual = this.romb.kerulet(100.0 , 90);
+        double expected = 10.0;
         Assert.assertEquals(actual, expected, 0.1);
     }
 }
