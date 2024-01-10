@@ -15,6 +15,6 @@ public class Romb {
 
     }
     public double perimeter(double side){
-        return 0.0;
+        return Math.pow(side, 4);
     }
 }
