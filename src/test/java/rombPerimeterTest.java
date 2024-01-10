@@ -12,9 +12,15 @@ public class rombPerimeterTest {
         this.romb = new Romb();
     }
      @Test
-    public void rombTestCalcPerimeter(){
+    public void rombTestCalcPerimeter_10(){
         double actual = this.romb.perimeter(10.0 );
         double expected = 10000;
+        Assert.assertEquals(actual, expected, 0.1);
+    }
+        @Test
+    public void rombTestCalcPerimeter_5(){
+        double actual = this.romb.perimeter(5 );
+        double expected = 625;
         Assert.assertEquals(actual, expected, 0.1);
     }
 }
