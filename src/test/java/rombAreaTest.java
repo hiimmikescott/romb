@@ -30,6 +30,6 @@ public class rombAreaTest {
     }
     @Test( expectedExceptions = InputMismatchException.class )
     public void testCalcRadius_Zero_Angle() {
-        this.romb.area(1, 0);        
+        this.romb.perimeter(0);        
     }
 }

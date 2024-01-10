@@ -15,6 +15,9 @@ public class Romb {
 
     }
     public double perimeter(double side){
+         if ( side <= 0){
+            throw new InputMismatchException();
+        }
         return Math.pow(side, 4);
     }
 }
