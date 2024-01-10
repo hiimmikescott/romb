@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -21,5 +23,9 @@ public class rombTest {
         double actual = this.romb.kerulet(100.0 , 90);
         double expected = 10.0;
         Assert.assertEquals(actual, expected, 0.1);
+    }
+    @Test( expectedExceptions = InputMismatchException.class )
+    public void testCalckerulet_Zero_Side() {
+        this.romb.kerulet(0, 1);        
     }
 }
