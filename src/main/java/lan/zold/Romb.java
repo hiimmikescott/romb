@@ -18,6 +18,6 @@ public class Romb {
          if ( side <= 0){
             throw new InputMismatchException();
         }
-        return Math.pow(side, 4);
+        return 4*side;
     }
 }

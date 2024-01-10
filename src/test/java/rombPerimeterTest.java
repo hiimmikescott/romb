@@ -22,8 +22,8 @@ public class rombPerimeterTest {
         @Test
     public void rombTestCalcPerimeter_5(){
         double actual = this.romb.perimeter(5 );
-        double expected = 625;
-        Assert.assertEquals(actual, expected, 0.1);
+        double expected = 20;
+        Assert.assertEquals(actual, expected, 0.0);
     }      
     @Test( expectedExceptions = InputMismatchException.class )
     public void testCalcPerimeter_Zero_side() {
