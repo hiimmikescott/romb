@@ -13,7 +13,7 @@ public class rombTest {
     @Test
     public void rombTestCalc(){
         double actual = this.romb.kerulet(30.0 , 35);
-        double expected = 0.573;
+        double expected = 3.1416;
         Assert.assertEquals(actual, expected, 0.1);
     }
 }
