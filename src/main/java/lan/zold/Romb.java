@@ -14,5 +14,7 @@ public class Romb {
         return Math.sqrt(side)*Math.sin(rad);
 
     }
-    
+    public double perimeter(double side){
+        return 0.0;
+    }
 }
