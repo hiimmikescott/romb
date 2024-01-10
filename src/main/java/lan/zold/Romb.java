@@ -14,4 +14,5 @@ public class Romb {
         return Math.sqrt(side)*Math.sin(rad);
 
     }
+    
 }
