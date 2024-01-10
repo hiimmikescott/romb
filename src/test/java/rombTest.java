@@ -28,4 +28,8 @@ public class rombTest {
     public void testCalckerulet_Zero_Side() {
         this.romb.kerulet(0, 1);        
     }
+    @Test( expectedExceptions = InputMismatchException.class )
+    public void testCalcRadius_Zero_Angle() {
+        this.romb.kerulet(1, 0);        
+    }
 }
