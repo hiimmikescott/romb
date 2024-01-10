@@ -14,22 +14,22 @@ public class rombTest {
     }
     @Test
     public void rombTestCalckerulet_30_35(){
-        double actual = this.romb.kerulet(30.0 , 35);
+        double actual = this.romb.area(30.0 , 35);
         double expected = 3.1416;
         Assert.assertEquals(actual, expected, 0.1);
     }
     @Test 
     public void rombTestCalckerulet_100_90(){
-        double actual = this.romb.kerulet(100.0 , 90);
+        double actual = this.romb.area(100.0 , 90);
         double expected = 10.0;
         Assert.assertEquals(actual, expected, 0.1);
     }
     @Test( expectedExceptions = InputMismatchException.class )
     public void testCalckerulet_Zero_Side() {
-        this.romb.kerulet(0, 1);        
+        this.romb.area(0, 1);        
     }
     @Test( expectedExceptions = InputMismatchException.class )
     public void testCalcRadius_Zero_Angle() {
-        this.romb.kerulet(1, 0);        
+        this.romb.area(1, 0);        
     }
 }

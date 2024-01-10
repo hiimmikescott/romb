@@ -3,7 +3,7 @@ package lan.zold;
 import java.util.InputMismatchException;
 
 public class Romb {
-    public double kerulet(double side, double angle){
+    public double area(double side, double angle){
         if ( side <= 0 || angle <= 0){
             throw new InputMismatchException();
         }
