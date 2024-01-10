@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,5 +24,9 @@ public class rombPerimeterTest {
         double actual = this.romb.perimeter(5 );
         double expected = 625;
         Assert.assertEquals(actual, expected, 0.1);
+    }      
+    @Test( expectedExceptions = InputMismatchException.class )
+    public void testCalcPerimeter_Zero_side() {
+        this.romb.perimeter(0);       
     }
 }
